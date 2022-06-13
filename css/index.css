@@ -1,0 +1,195 @@
+@font-face {
+  font-family: notoRegular;
+  src: url(/Noto_Serif/NotoSerif-Regular.ttf);
+}
+@font-face {
+  font-family: notoBold;
+  src: url(/Noto_Serif/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: notoItalic;
+  src: url(/Noto_Serif/NotoSerif-Italic.ttf);
+}
+@font-face {
+  font-family: notoBoldItalic;
+  src: url(/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: notoBold;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  gap: 1em;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: sticky;
+  background-color: #1b1b1b;
+  border-bottom: 2px solid black;
+  transition: background-color 500ms;
+  overflow: hidden;
+}
+nav > p {
+  float: left;
+  margin-left: -300px;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav > ul {
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: -300px;
+  text-align: center;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 1em;
+}
+nav ul > li {
+  list-style: none;
+  text-align: center;
+}
+nav ul > li a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav ul li a:visited {
+  color: darkorange;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #111;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:active {
+  color: darkgoldenrod;
+}
+main {
+  background-color: #ffffff;
+  background: linear-gradient(to left, #a9f1df, #ffbbbb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.awareness {
+  padding-bottom: 20px;
+}
+.awareness > div.text {
+  float: left;
+  margin-right: 30px;
+  padding-top: 10%;
+}
+.awareness > div h2 {
+  color: rgb(92, 2, 92);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.awareness > div button {
+  background-color: rgb(65, 1, 65);
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-top: 50px;
+  font-family: notoBold;
+}
+.awareness > div button:hover {
+  background-color: darkblue;
+}
+.awareness > aside {
+  float: right;
+}
+.statistics h2 {
+  color: rgb(92, 2, 92);
+  font-size: 2em;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 9em;
+}
+.column div {
+  width: 33.33%;
+}
+.row {
+  width: 100%;
+}
+.column img {
+  width: 40px;
+}
+.column .numbers {
+  font-family: notoBold;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.column .cases {
+  font-family: notoBoldItalic;
+}
+.Coronavirus {
+  position: relative;
+  gap: 3em;
+  padding-top: 20px;
+}
+.Coronavirus aside {
+  float: left;
+}
+.Coronavirus div {
+  float: right;
+  margin-left: 2em;
+}
+.Coronavirus div h2 {
+  font-family: notoBoldItalic;
+  color: rgb(92, 2, 92);
+}
+.Coronavirus div li {
+  list-style: none;
+}
+.Coronavirus div li i {
+  color: darkblue;
+}
+.Coronavirus div .button {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(7, 6, 6);
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 3px solid #3c67e3;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.button:hover {
+  animation: pulsate 2s ease-in-out;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+

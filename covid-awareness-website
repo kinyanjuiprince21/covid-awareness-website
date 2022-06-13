@@ -1,0 +1,43 @@
+<div class="container full">
+            <div class="card">
+              <div class="box">
+                <div class="content">
+                  <h2>01</h2>
+                  <i class="fas fa-hands-wash"></i>
+                  <h3></i>HardWashing</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="content">
+                  <h2>02</h2>
+                  <i class="fas fa-head-side-mask"></i>
+                  <h3></i>Use Mask</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <div class="content">
+                  <h2>03</h2>
+                  <i class="fas fa-virus-slash"></i>
+                  <h3>Avoid Contact</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>04</h2>
+                <i class="fas fa-hand-holding-medical"></i>
+                <h3>Social Distancing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+              </div>
+            </div>
+          </div>
+        </div>

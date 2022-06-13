@@ -1,0 +1,212 @@
+@font-face {
+  font-family: notoRegular;
+  src: url(/Noto_Serif/NotoSerif-Regular.ttf);
+}
+@font-face {
+  font-family: notoBold;
+  src: url(/Noto_Serif/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: notoItalic;
+  src: url(/Noto_Serif/NotoSerif-Italic.ttf);
+}
+@font-face {
+  font-family: notoBoldItalic;
+  src: url(/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: notoBold;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  gap: 1em;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: sticky;
+  background-color: #1b1b1b;
+  border-bottom: 2px solid black;
+  transition: background-color 500ms;
+  overflow: hidden;
+}
+nav > p {
+  float: left;
+  margin-left: -300px;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav > ul {
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: -300px;
+  text-align: center;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 1em;
+}
+nav ul > li {
+  list-style: none;
+  text-align: center;
+}
+nav ul > li a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav ul li a:visited {
+  color: darkorange;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #111;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:active {
+  color: darkgoldenrod;
+}
+main {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  flex-direction: column;
+  background-position: center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/stats2.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  font-family: notoBold;
+  padding-top: 15px;
+}
+.introductory {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.introductory > div.text {
+  float: left;
+  margin-right: 30px;
+  padding-top: 10%;
+}
+.introductory > aside {
+  float: right;
+}
+.introductory .text h2,
+.prevention h2 {
+  color: rgb(247, 192, 11);
+  font-size: 3em;
+}
+.prevention h2 {
+  text-align: center;
+}
+.introductory .text span {
+  font-size: 2em;
+}
+.introductory .text > p {
+  color: #ffffff;
+}
+.prevention {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  align-content: justify;
+}
+.prevention-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.single-prevention {
+  position: relative;
+  width: 30%;
+  height: 500px;
+  box-sizing: border-box;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2),
+    inset -3px -3px 5px rgba(255, 255, 255, 0.1),
+    1px 3px 3px rgba(0, 0, 0, 0.3), -3px -3px 3px rgba(255, 255, 255, 0.1);
+  padding: 0 10px;
+  border-radius: 15px;
+  transition: .5s;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+.single-prevention .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.single-prevention .box:hover {
+  transform: translateY(-50px);
+}
+.single-prevention .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.03);
+}
+.single-prevention .box h3 {
+  font-size: 1.5rem;
+  font-family: notoBoldItalic;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  color: rgb(248, 192, 9);
+}
+.single-prevention .box p {
+  font-size: 1rem;
+  color: #ffffff;
+  z-index: 1;
+  transition: 0.5s;
+}
+.single-prevention .box p a {
+  color: blue;
+}
+.single-prevention .box h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+.box .icons i {
+  font-size: 2rem;
+  padding: 15px;
+  color: rgb(248, 164, 8);
+}
+
+

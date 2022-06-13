@@ -1,0 +1,240 @@
+@font-face {
+  font-family: notoRegular;
+  src: url(/Noto_Serif/NotoSerif-Regular.ttf);
+}
+@font-face {
+  font-family: notoBold;
+  src: url(/Noto_Serif/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: notoItalic;
+  src: url(/Noto_Serif/NotoSerif-Italic.ttf);
+}
+@font-face {
+  font-family: notoBoldItalic;
+  src: url(/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: notoBold;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  gap: 1em;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  position: sticky;
+  background-color: #1b1b1b;
+  border-bottom: 2px solid black;
+  transition: background-color 500ms;
+  overflow: hidden;
+  scroll-behavior: auto;
+}
+nav > p {
+  float: left;
+  margin-left: -300px;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav > ul {
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: -300px;
+  text-align: center;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 1em;
+}
+nav ul > li {
+  list-style: none;
+  text-align: center;
+}
+nav ul > li a {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: notoBold;
+  font-size: 1.2em;
+}
+nav ul li a:visited {
+  color: darkorange;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:hover {
+  color: #111;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+nav ul li a:active {
+  color: darkgoldenrod;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/contact.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(241, 70, 8, 0.5);
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+aside {
+  margin-right: 30px;
+  margin: auto;
+  padding: 10px 10px;
+}
+pre {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+}
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: rgb(247, 252, 248);
+  color: green;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: none;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 20px;
+  border: 2px solid white;
+}
+legend {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 2px 2px;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+}
+label {
+  font-weight: bold;
+}
+textarea {
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#message {
+  display: block;
+  color: #000;
+  font-family: notoBoldItalic;
+  font-weight: 300;
+  padding: 5px;
+}
+.invalid .input-email::before {
+  content: '';
+  position: absolute;
+  right: 23px;
+  width: 24px;
+  z-index: 2;
+  height: 24px;
+  background: url(https://fadzrinmadu.github.io/hosted-assets/email-validation-check-using-javascript/invalid.png);  
+  background-size: cover;
+}
+.valid .input-email::before {
+  content: '';
+  position: absolute;
+  right: 23px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  background: url(https://fadzrinmadu.github.io/hosted-assets/email-validation-check-using-javascript/valid.png);  
+  background-size: cover;
+}
+input[type=text] {
+  padding: 5px 3px;
+  margin-bottom: 10px;
+  width: 400px;
+  border: none;
+  border-radius: 2px;
+}
+input[type=text]:focus {
+  outline-color: blue;
+  outline-width: 1px;
+  box-shadow: 3px 3px 5px blue;
+}
+input[type=tel] {
+  padding: 5px 3px;
+  margin-bottom: 10px;
+  width: 400px;
+  border: none;
+  border-radius: 2px;
+}
+input[type=tel]:focus {
+  outline-color: blue;
+  outline-width: 1px;
+  box-shadow: 3px 3px 5px blue;
+}
+input[type=email] {
+  position: relative;
+  padding: 5px 3px;
+  z-index: 1;
+  margin-bottom: 10px;
+  width: 400px;
+  border: none;
+  border-radius: 2px;
+}
+input[type=email]:focus {
+  outline-color: blue;
+  outline-width: 1px;
+  box-shadow: 3px 3px 5px blue;
+}
+select {
+  padding: 5px 3px;
+  margin-bottom: 10px;
+  width: 400px;
+  border: none;
+  border-radius: 2px;
+}
+select:focus {
+  outline-color: blue;
+  outline-width: 1px;
+  box-shadow: 3px 3px 5px blue;
+}
+button#submit {
+  margin-right: 10px;
+  padding: 5px 5px;
+  background-color: black;
+  font-family: 'Nunito', sans-serif;  
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+#submit:hover{
+  background-color: darkorange;
+}

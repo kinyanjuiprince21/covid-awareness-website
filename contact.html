@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-Awareness</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="/images/bacteria.png"
+    />
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5c5e0bb5fb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+        <p>Covid</p>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a  href="prevention.html">Prevention</a>
+            </li>
+            <li>
+                <a href="symptoms.html">Symptoms</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+      <section>
+        <aside>
+          <pre>Talk to a Medical</pre>
+          <pre>Covid-19 Expert</pre>
+        </aside>
+        <form action="" method="post" id="form" onsubmit="setTimeout(function () { window.location.reload(); }, 8000)">
+          <div class="alert">Message Sent</div>
+          <fieldset>
+            <legend>Covid-Awareness</legend>
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+              autofocus
+              required
+            />
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+            <label for="phoneNumber">Phone*</label>
+            <input
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              placeholder="Phone Number"
+              required
+            />
+            <small>Format: for example 0723456789</small>
+            <label for="email">Email</label>
+            <div class="input-email">
+              <input
+                class="input"
+                type="email"
+                autocomplete="off"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <span id="message"></span>
+            </div>
+            <label for="option">Choose an option</label>
+            <select id="option" name="option">
+              <option value="Covid-19 Symptoms">Covid-19 Symptoms</option>
+              <option value="Covid-19 Causes">Covid-19 Causes</option>
+              <option value="Covid-19 Spread">Covid-19 Spread</option>
+            </select>
+            <h2>Message</h2>
+            <textarea
+              name="message"
+              id="textarea"
+              style="height: 150px"
+              placeholder="Type a message"
+            ></textarea>
+            <button type="submit" id="submit" sendMessage()>Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <div id="footerpage"></div>
+    <script src="contact_validator.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="Footer_loader.js"></script>
+    <script src="contact.js"></script>
+    
+  </body>
+</html>

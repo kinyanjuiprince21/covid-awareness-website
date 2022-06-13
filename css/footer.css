@@ -1,0 +1,113 @@
+@font-face {
+  font-family: notoRegular;
+  src: url(/Noto_Serif/NotoSerif-Regular.ttf);
+}
+@font-face {
+  font-family: notoBold;
+  src: url(/Noto_Serif/NotoSerif-Bold.ttf);
+}
+@font-face {
+  font-family: notoItalic;
+  src: url(/Noto_Serif/NotoSerif-Italic.ttf);
+}
+@font-face {
+  font-family: notoBoldItalic;
+  src: url(/Noto_Serif/NotoSerif-BoldItalic.ttf);
+}
+footer {
+  width: 100%;
+  min-height: 300px;
+  max-height: auto;
+  font-family: notoBold;
+  background-image: linear-gradient(
+    to right top,
+    #161616,
+    #191919,
+    #1b1b1b,
+    #1e1e1e,
+    #212121
+  );
+  clear: both;
+}
+footer .footer-wrap {
+  margin: 0 auto;
+  padding-left: 9%;
+  color: white;
+}
+.widgetFooter {
+  display: flex;
+  flex-direction: column;
+  width: calc(85% / 3);
+  height: auto;
+  float: left;
+  padding: 2.5%;
+  text-align: center;
+}
+h4.uppercase {
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 20px;
+  position: relative;
+}
+
+#footerUsefulLink,
+#footerMediaLinks {
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: -300px;
+  text-align: center;
+  text-decoration: none;
+  gap: 1em;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+#footerUsefulLink li,
+#footerMediaLinks li {
+  cursor: pointer;
+  list-style: none;
+}
+#footerUsefulLink li a, #footerMediaLinks li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+#footerUsefulLink li a:hover, #footerMediaLinks li a:hover {
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+span.mediaLinksIcons {
+    font-size: 1.2em;
+}
+#footerUsefulLink li:hover .usefulLinksIcons,
+#footerUsefulLink li:hover a {
+  color: #00ced1;
+}
+ul#footerMediaLinks li:hover span.fb,
+ul#footerMediaLinks li:hover a.fb {
+  color: #3b5998;
+}
+ul#footerMediaLinks li:hover span.twit,
+ul#footerMediaLinks li:hover a.twit {
+  color: #1da1f2;
+}
+ul#footerMediaLinks li:hover span.insta,
+ul#footerMediaLinks li:hover a.insta {
+  color: #ffc838;
+}
+
+div#footerLogo img {
+  width: 50%;
+  margin: 25% 0;
+}
+div.footerCopy {
+  clear: both;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  border-top: 1px solid #ccc;
+  background: #262626;
+}
